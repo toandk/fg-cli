@@ -1,0 +1,25 @@
+import 'package:get/get.dart';
+
+class <%= props.pascalCaseName %>Controller extends GetxController {
+  late dynamic item;
+  // RxInt status = 0.obs;
+  // RxString name = "".obs;
+
+  void setItem(dynamic item) {
+    this.item = item;
+    // status.value = item.status ?? 0;
+    // name.value = item.name ?? "";
+  }
+
+  // void doSomething() {}
+
+  @override
+  void onInit() {
+    print('onInit <%= props.pascalCaseNaame %> controller');
+  }
+
+  @override
+  onClose() {
+
+  }
+}

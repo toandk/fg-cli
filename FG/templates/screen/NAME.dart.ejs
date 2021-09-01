@@ -1,0 +1,25 @@
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import '<%= props.kebabCaseName %>_controller.dart';
+
+class <%= props.pascalCaseName %>Binding extends Bindings {
+  @override
+  void dependencies() {
+    Get.lazyPut(() => <%= props.pascalCaseName %>Controller());
+    // Uncomment it if you have item controller for the list item
+    // Get.create(() => <%= props.pascalCaseName %>ItemController());
+  }
+}
+
+class <%= props.pascalCaseName %>Screen extends GetView<<%= props.pascalCaseName %>Controller> {
+  const <%= props.pascalCaseName %>Screen({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return GetBuilder<<%= props.pascalCaseName %>Controller>(
+      builder: (controller) {
+        return Container();
+      }
+    );
+  }
+}

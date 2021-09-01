@@ -1,0 +1,28 @@
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import '<%= props.kebabCaseName %>_controller.dart';
+
+/// Don't forget to add this line to screen Bindings class, inside dependencies()
+/// Get.create(() => <%= props.pascalCaseName %>Controller());
+
+class <%= props.pascalCaseName %> extends GetWidget<<%= props.pascalCaseName %>Controller> {
+  final dynamic item;
+  const <%= props.pascalCaseName %>({Key? key, required this.item}) : super(key: key);
+
+  onClickItem() {
+    // controller.doSomething();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    controller.setItem(item);
+    return GetBuilder<<%= props.pascalCaseName %>Controller>(
+      builder: (controller) {
+        return InkWell(
+          onTap: onClickItem,
+          child: Container()
+        );
+      }
+    );
+  }
+}

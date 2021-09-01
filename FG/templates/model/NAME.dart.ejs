@@ -1,0 +1,16 @@
+import 'package:json_annotation/json_annotation.dart';
+part '<%= props.filename %>.g.dart';
+
+@JsonSerializable()
+class <%= props.pascalCaseName %> {
+  @JsonKey(name: "id")
+  String? id;
+
+  <%= props.pascalCaseName %>(
+      {this.id,
+      });
+
+  factory <%= props.pascalCaseName %>.fromJson(Map<String, dynamic> data) => _$<%= props.pascalCaseName %>FromJson(data);
+
+  Map<String, dynamic> toJson() => _$<%= props.pascalCaseName %>ToJson(this);
+}
