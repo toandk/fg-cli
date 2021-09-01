@@ -18,19 +18,19 @@ It's buit using https://github.com/infinitered/gluegun inpired by https://github
 - Run the bellow commands to generate Models, Screens, or List item.
 - The default template files are used for Flutter GetX project, you can modify these files to match with your project templates
   
-# Model generator
+### Model generator
 To generate a model `AbcXyz` in the folder `lib/models/abc_xyz`: 
 ```shell
 fg-cli generate model AbcXyz
 ```
 
-# Screen generator
+### Screen generator
 To generate a screen `AbcXyz` in the folder `lib/screens/abc_xyz`: 
 ```shell
 fg-cli generate screen AbcXyz
 ```
 
-# List item generator
+### List item generator
 To generate a list item `AbcXyz` in the folder `lib/list_items/abc_xyz`: 
 ```shell
 fg-cli generate list_item AbcXyz
