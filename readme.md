@@ -3,14 +3,14 @@
 This is a CLI tool to generate Flutter files including Model, screen, widget... for your Flutter project.
 It's buit using https://github.com/infinitered/gluegun inpired by https://github.com/infinitered/ignite 
 
-# Usage
+# Installation
 
 - Clone this repository
 - Open terminal and run this command to active the CLI
 
-```shell
-yarn link
-```
+  ```shell
+  yarn link
+  ```
 
 - Copy the folder `FG/templates` to your Flutter project root
 
@@ -18,24 +18,27 @@ yarn link
 - Run the bellow commands to generate Models, Screens, or List item.
 - The default template files are used for Flutter GetX project, you can modify these files to match with your project templates
   
-# To generate a model `AbcXyz` in the folder `lib/models/abc_xyz`: 
+# Model generator
+To generate a model `AbcXyz` in the folder `lib/models/abc_xyz`: 
 ```shell
 fg-cli generate model AbcXyz
 ```
 
-# To generate a screen `AbcXyz` in the folder `lib/screens/abc_xyz`: 
+# Screen generator
+To generate a screen `AbcXyz` in the folder `lib/screens/abc_xyz`: 
 ```shell
 fg-cli generate screen AbcXyz
 ```
 
-# To generate a list item `AbcXyz` in the folder `lib/list_items/abc_xyz`: 
+# List item generator
+To generate a list item `AbcXyz` in the folder `lib/list_items/abc_xyz`: 
 ```shell
 fg-cli generate list_item AbcXyz
 ```
 
 ## Making your own generators
-- Feel free to modify the templates files in the folder `FG/templates`.
-- Your generators live in your app, in `FG/templates/*`. To make a new generator, go look at the ones that are there when you start your app. You'll see that they have `*.ejs` files (which get interpreted when you generate them).
+Feel free to modify the templates files in the folder `FG/templates`.
+Your generators live in your app, in `FG/templates/*`. To make a new generator, go look at the ones that are there when you start your app. You'll see that they have `*.ejs` files (which get interpreted when you generate them).
 
 ```shell
 fg-cli g screen Settings
