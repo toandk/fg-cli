@@ -1,7 +1,7 @@
 # Flutter generator fg-cli CLI
 
 This is a CLI tool to generate Flutter files including Model, screen, widget... for your Flutter project.
-It's buit using https://github.com/infinitered/gluegun inpired by https://github.com/infinitered/ignite 
+It's buit using https://github.com/infinitered/gluegun inspired by https://github.com/infinitered/ignite 
 
 # Installation
 
